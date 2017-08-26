@@ -47,31 +47,34 @@ $ go help
 ## Chap 3. Type
 
 ### Numbers
-    - Integer
-        - uint8 (unsigned integer -- positive number + 0)
-        - uint16
-        - uint32
-        - uint64
-        - int8 (signed integer -- nagative 0 positive number)
-        - int16
-        - int32
-        - int64
-        - byte = uint8
-        - rune = int32
-        - for architech uint,int uintptr
+
+- Integer
+	- uint8 (unsigned integer -- positive number + 0)
+    - uint16
+    - uint32
+    - uint64
+    - int8 (signed integer -- nagative 0 positive number)
+    - int16
+    - int32
+    - int64
+    - byte = uint8
+    - rune = int32
+    - for architech uint,int uintptr
+        
     - Floating-point
         - float32
         - float64
         - complex64 --> (imaginary number)
         - complex128
+        
 ### String
 
-	- string "ABC"
+- string "ABC"
 
 ### Boolean
 	
-	- true 
-	- false
+- true 
+- false
 
 ## Chap 4 Variable
 
@@ -226,7 +229,7 @@ func main() {
 
 ### Slices
 
-- Make Slices
+> Make Slices
 
 ```go
 var x []float64
@@ -255,9 +258,9 @@ x := arr[:] => arr[0:len(arr)]
 
 ```
 
-- Function of Slices
+#### Function of Slices
 
-	- append
+> append
 
 ```go
 func main(){
@@ -267,7 +270,7 @@ func main(){
 }
 ```
 
-	- copy
+> copy
 
 ```
 func main(){
@@ -277,4 +280,6 @@ func main(){
 	fmt.Println(slice3,slice4)
 }
 ```
+
+-- p44
 	
