@@ -13,4 +13,11 @@ func main() {
 	output := input * foot
 
 	fmt.Println(output, " m")
+
+	/*
+		---- Meter to Foot ----
+		Enter number F :
+		78
+		23.7744  m
+	*/
 }

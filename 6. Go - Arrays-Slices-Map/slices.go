@@ -11,4 +11,9 @@ func main() {
 	slice4 := make([]int, 2)
 	copy(slice4, slice3) // copy(to,from)
 	fmt.Println(slice3, slice4)
+
+	/*
+		[1 2 3] [1 2 3 4 5]
+		[1 2 3] [1 2]
+	*/
 }

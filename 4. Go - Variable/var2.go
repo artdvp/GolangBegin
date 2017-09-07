@@ -13,3 +13,8 @@ func main() {
 func f() {
 	fmt.Println(x)
 }
+
+/*
+ Hello World
+ Hello World
+*/

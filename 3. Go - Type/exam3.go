@@ -9,4 +9,11 @@ func main() {
 	fmt.Println("32132 x 42452 = ", 32132*42452)
 	fmt.Println(len("Hey Hello Go na ja jub jub"))
 	fmt.Println((true && false) || (false && true) || !(false && false))
+
+	/*
+			 11111111 => 255
+			 32132 x 42452 =  1364067664
+			 26
+		 	 true
+	*/
 }

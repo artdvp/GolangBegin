@@ -22,4 +22,13 @@ func main() {
 	fmt.Println(k)
 	l := 7
 	fmt.Println(l)
+
+	/*
+	 Hello World
+	 first
+	 first second
+	 false
+	 Hello World
+	 7
+	*/
 }

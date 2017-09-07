@@ -14,4 +14,11 @@ func main() {
 	output := (input - 32) * 5 / 9
 
 	fmt.Println(output)
+
+	/*
+		---- Fahrenheit to Celsius ----
+		Enter number F :
+		65
+		18.333333333333332
+	*/
 }

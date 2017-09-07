@@ -48,4 +48,12 @@ func main() {
 		total4 += value
 	}
 	fmt.Println(total4 / float64(len(z)))
+
+	/*
+		[0 0 0 0 100]
+		70.6
+		70.6
+		53.2
+		48.8
+	*/
 }

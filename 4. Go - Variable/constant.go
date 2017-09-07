@@ -21,4 +21,11 @@ func main() {
 	output := input * 2
 
 	fmt.Println(output)
+
+	/*
+	 Hello World
+	 Enter a Number :
+	 6
+	 12
+	*/
 }

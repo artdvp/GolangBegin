@@ -15,4 +15,16 @@ func main() {
 	6
 	`
 	fmt.Println(mm)
+
+	/*
+		11
+		101
+		Hello  World
+		1
+		        2
+		        3
+		        4
+		        5
+		        6
+	*/
 }

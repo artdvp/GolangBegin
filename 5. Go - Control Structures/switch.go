@@ -23,4 +23,10 @@ func main() {
 	default:
 		fmt.Println("Unknown Number")
 	}
+
+	/*
+		-- Enter number :
+		4
+		Four
+	*/
 }

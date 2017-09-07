@@ -24,4 +24,24 @@ func main() {
 		}
 
 	}
+
+	/*
+		1 Even
+		2 Odd
+		3 Even
+		4 Odd
+		5 Even
+		6 Odd
+		7 Even
+		8 Odd
+		9 Even
+		10 Odd
+		6 devisible by 2
+		8 devisible by 2
+		9 devisible by 3
+		10 devisible by 2
+		12 devisible by 2
+		14 devisible by 2
+		15 devisible by 3
+	*/
 }
