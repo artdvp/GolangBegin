@@ -5,6 +5,8 @@
 
 > ref_1 := [Ebook1](https://www.dropbox.com/sh/is3hwdqa1dpsb99/AADfQKrDju44z2Xx6ukE9WpOa/%E0%B8%AB%E0%B8%81%E0%B8%9A%E0%B8%97%E0%B9%81%E0%B8%A3%E0%B8%81.pdf?dl=0)
 
+> ref_2 := [Ebook2](https://www.dropbox.com/sh/is3hwdqa1dpsb99/AAC78qWzQ4wbPYBMTAPBcf3Xa/%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%94.pdf?dl=0)
+
 ## Chap 1 Installation
 
 - https://golang.org/
@@ -318,7 +320,7 @@ func main() {
 	   10
 	*/
 
-	//delete
+	//delete(x,1)
 	elements := make(map[string]string)
 	elements["H"] = "Hydrogen"
 	elements["He"] = "Helium"
@@ -394,3 +396,155 @@ func main() {
 }
 ```
 	
+## 7. Function
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	someOtherName := []float64{98, 93, 77, 82, 83}
+
+	fmt.Println(average(someOtherName))
+
+	/*
+		86.6
+	*/
+}
+
+func average(xs []float64) float64 {
+	//panic("Not Implemented")
+	total := 0.0
+	for _, v := range xs {
+		total += v
+	}
+	return total / float64(len(xs))
+}
+
+```
+
+```go
+package main
+
+import "fmt"
+
+var x int = 5
+
+func main() {
+
+	f()
+}
+
+func f() {
+	fmt.Println(x)
+}
+```
+
+```go
+package main
+
+import "fmt"
+
+var x int = 5
+
+func main() {
+
+	fmt.Println(f1())
+}
+
+func f1() int {
+	return f2()
+}
+
+func f2() int {
+	return 1
+}
+
+func f3() (r int) {
+	r = 1
+	return
+}
+```
+
+```go
+package main
+
+import "fmt"
+
+func f1(int, int) {
+	return 5, 6
+}
+
+func main() {
+
+	x, y := f()
+}
+```
+
+> Variadic Function : multi parameter
+
+```go
+package main
+
+import "fmt"
+
+func add(args ...int) int {
+	total := 0
+	for _, v := range args {
+		total += v
+	}
+	return total
+}
+
+func main() {
+
+	fmt.Println(add(1, 2, 3))
+}
+
+// 6
+
+//func Println(a ...interface{}) (n int,err error)
+
+```
+
+
+```go
+package main
+
+import "fmt"
+
+func add(args ...int) int {
+	total := 0
+	for _, v := range args {
+		total += v
+	}
+	return total
+}
+
+func main() {
+
+	xs := []int{1, 2, 3}
+	fmt.Println(add(xs...)) //send multi parameter with slice x...
+}
+
+// 6
+
+```
+
+> Closure : function unnecessary have name can be assign to variable
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	add := func(x, y int) int {
+		return x + y
+	}
+	fmt.Println(add(1, 5))
+}
+
+// 6
+```
