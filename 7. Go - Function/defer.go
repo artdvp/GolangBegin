@@ -14,3 +14,8 @@ func main() {
 	defer second() // execute after first function complete
 	first()
 }
+
+/*
+1st
+2nd
+*/

@@ -8,3 +8,5 @@ func main() {
 	}
 	fmt.Println(add(1, 5))
 }
+
+// 6

@@ -17,3 +17,9 @@ func main() {
 	fmt.Println(nextEven())
 	fmt.Println(nextEven())
 }
+
+/*
+0
+2
+4
+*/

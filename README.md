@@ -7,6 +7,7 @@
 
 > ref_2 := [Ebook2](https://www.dropbox.com/sh/is3hwdqa1dpsb99/AAC78qWzQ4wbPYBMTAPBcf3Xa/%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%94.pdf?dl=0)
 
+> ref_3 := [Ebook3](https://www.dropbox.com/sh/is3hwdqa1dpsb99/AAAK_CtDN8qeKf_gwc5lR4dga/%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%81%E0%B8%9B%E0%B8%94.pdf?dl=0)
 ## Chapter 1 - Installation
 
 - https://golang.org/
@@ -659,4 +660,46 @@ func main() {
 	panic("PANIC")
 
 }
+```
+
+## Chapter 8 - Pointers
+
+```go
+package main
+
+import "fmt"
+
+func zero(xPtr *int) {
+	*xPtr = 0
+}
+
+func main() {
+	x := 5
+	zero(&x)
+	fmt.Println(x)
+}
+
+// 0
+
+```
+
+> new
+
+```go
+package main
+
+import "fmt"
+
+func one(xPtr *int) {
+	*xPtr = 1
+}
+
+func main() {
+	xPtr := new(int)
+	one(xPtr)
+	fmt.Println(*xPtr)
+}
+
+// 1
+
 ```

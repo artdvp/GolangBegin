@@ -17,3 +17,5 @@ func main() {
 	k = 10
 	fmt.Println(factorial(k))
 }
+
+// 3628800
