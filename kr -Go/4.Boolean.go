@@ -11,4 +11,8 @@ func main() {
 	isJumping := false
 	fmt.Println(isEmpty)
 	fmt.Println(isJumping)
+
+	someboolean := 5 > 3
+
+	fmt.Println(someboolean)
 }
