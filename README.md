@@ -7,7 +7,7 @@
 
 > ref_2 := [Ebook2](https://www.dropbox.com/sh/is3hwdqa1dpsb99/AAC78qWzQ4wbPYBMTAPBcf3Xa/%E0%B8%9A%E0%B8%97%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%88%E0%B9%87%E0%B8%94.pdf?dl=0)
 
-## Chap 1 Installation
+## Chapter 1 - Installation
 
 - https://golang.org/
 - https://community.c9.io/t/writing-a-go-app/1725
@@ -24,7 +24,7 @@ $ export GOROOT=$opt/
 $ export PATH=$PATH:$GOROOT/go/bin
 ```
 
-## Chap 2 Hello Go
+## Chapter 2 - Hello Go
 
 ```go
 package main
@@ -46,7 +46,7 @@ $ ./hello
 $ go help
 ```
 
-## Chap 3. Type
+## Chapter 3 - Type
 
 ### Numbers
 
@@ -78,7 +78,7 @@ $ go help
 - true 
 - false
 
-## Chap 4 Variable
+## Chapter 4 - Variable
 
 ### Constant
     
@@ -110,7 +110,7 @@ func main() {
 
 ```
 
-## Chap 5 Control Structures
+## Chapter 5 - Control Structures
 
 ### For loop
     
@@ -166,7 +166,7 @@ func main() {
 
 ```
 
-## Chap 6 Arrays, Slices and Map
+## Chapter 6 - Arrays, Slices and Map
 
 
 ### Arrays
@@ -396,7 +396,7 @@ func main() {
 }
 ```
 	
-## 7. Function
+## Chapter 7 - Function
 
 ```go
 package main
@@ -659,5 +659,4 @@ func main() {
 	panic("PANIC")
 
 }
-
 ```
