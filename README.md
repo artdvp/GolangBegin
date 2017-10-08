@@ -548,3 +548,116 @@ func main() {
 
 // 6
 ```
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	x := 0
+	increment := func() int {
+		x++
+		return x
+	}
+
+	fmt.Println(increment())
+	fmt.Println(increment())
+
+	/*
+		1
+		2
+	*/
+}
+```
+
+```go
+package main
+
+import "fmt"
+
+func makeEvenGenerator() func() uint {
+	i := uint(0)
+	return func() (ret uint) {
+		ret = i
+		i += 2
+		return
+	}
+}
+
+func main() {
+	nextEven := makeEvenGenerator()
+	fmt.Println(nextEven())
+	fmt.Println(nextEven())
+	fmt.Println(nextEven())
+}
+
+```
+
+> Recursive function
+
+
+```go
+package main
+
+import (
+	"fmt"
+)
+
+func factorial(x uint) uint {
+	if x == 0 {
+		return 1
+	}
+	return x * factorial(x-1)
+}
+
+func main() {
+
+	var k uint
+	k = 10
+	fmt.Println(factorial(k))
+}
+
+```
+
+> Defer , Panic & Recover
+
+defer execute afeter first function complete
+
+```go
+package main
+
+import "fmt"
+
+func first() {
+	fmt.Println("1st")
+}
+
+func second() {
+	fmt.Println("2nd")
+}
+
+func main() {
+	defer second() // execute after first function complete
+	first()
+}
+```
+
+> Panic & Recover
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+	defer func() {
+		str := recover()
+		fmt.Println(str)
+	}()
+
+	panic("PANIC")
+
+}
+
+```
